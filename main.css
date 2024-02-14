@@ -78,21 +78,18 @@ html, body {
     left: -50px;
 }
 
-.container.active.close {
-    .btnBox {
-        animation: disappearBtn 1s ease-in-out forwards;
-    }
+.container.active.close .btnBox {
+    animation: disappearBtn 1s ease-in-out forwards;
+}
 
-    .boxTitle {
-        animation: disappearBoxTitle 1s ease-in-out forwards;
-    }
+.container.active.close .boxTitle {
+    animation: disappearBoxTitle 1s ease-in-out forwards;
 }
 
 @keyframes disappearBtn {
     from {
         top: 50%;
     }
-
     to {
         top: 150%;
     }
@@ -102,7 +99,6 @@ html, body {
     from {
         top: 10%;
     }
-
     to {
         top: -50%;
     }
@@ -129,69 +125,54 @@ html, body {
     0% {
         top: 0;
     }
-
     25% {
         top:  10px;
     }
-
     50% {
         top: -10px;
     }
-
     75% {
         top: 10px;
     }
-
     100% {
         top: 0;
     }
-
 }
 
 @keyframes animateCloud1 {
     0% {
         top: 75;
     }
-
     25% {
         top:  85;
     }
-
     50% {
         top: 65;
     }
-
     75% {
         top: 85;
     }
-
     100% {
         top: 75;
     }
-
 }
 
 @keyframes animateCloud2 {
     0% {
         top: 150;
     }
-
     25% {
         top:  160px;
     }
-
     50% {
         top: 140px;
     }
-
     75% {
         top: 160px;
     }
-
     100% {
         top: 150;
     }
-
 }
 
 .container.active .cloud1 {
@@ -410,8 +391,8 @@ html, body {
 
 .boxTitleCard {
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     display: flex;
     justify-content: center;
     background-color: white;
@@ -441,7 +422,6 @@ html, body {
     background-color: white;
     clip-path: polygon(10% 0, 35% 0, 50% 23%, 65% 0, 90% 0, 100% 30%, 50% 100%, 0 30%);
 }
-
 
 .titleCard {
     font-family: "Protest Revolution", sans-serif;
@@ -546,8 +526,9 @@ html, body {
     .leftFront {
         backface-visibility: hidden;
     }
-
 }
+
+
 
 @keyframes appearTitle {
     to {
@@ -608,5 +589,23 @@ html, body {
 
     100% {
         top: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cardValentine {
+        width: 90%;
+        max-width: 100%;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: -1;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .cardValentine {
+        height: 200px;
     }
 }

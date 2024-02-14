@@ -4,6 +4,11 @@
     box-sizing: border-box;
     user-select: none;
 }
+#audio-container {
+    position: absolute;
+    left: -9999px;
+}
+
 
 html, body {
     height: 100%;
@@ -591,8 +596,18 @@ html, body {
         top: 50%;
     }
 }
+#audio-container {
+    position: absolute;
+    left: -9999px;
+}
+
 
 @media only screen and (max-width: 600px) {
+    .boxTitle {
+        font-size: 70px; /* Giáº£m kÃ­ch thÆ°á»›c phÃ´ng chá»¯ cho thiáº¿t bá»‹ di Ä‘á»™ng */
+        top: 5%; /* Äiá»u chá»‰nh vá»‹ trÃ­ cá»§a tiÃªu Ä‘á» */
+    }
+
     .cardValentine {
         width: 90%;
         max-width: 100%;

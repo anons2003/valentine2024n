@@ -1,5 +1,5 @@
 // Thay đổi nội dung bức thư ở đây
-var letterContent = "húc bạn có một ngày Valentine thật vui bên cạnh những người bạn tuyệt vời. Và mong cho bạn sớm tìm được tình yêu đích thực của mình. Cảm ơn bạn đã xem 💖💖💖";
+var letterContent = "Chúc bạn có một ngày Valentine thật vui bên cạnh những người bạn tuyệt vời. Và mong cho bạn sớm tìm được tình yêu đích thực của mình. Cảm ơn bạn đã xem 💖💖💖";
 
 // Tốc độ viết chữ. Số càng nhỏ tốc độ càng nhanh. 50 là tốc độ khá phù hợp
 var durationWrite = 50;
